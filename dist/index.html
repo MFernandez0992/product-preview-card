@@ -6,33 +6,39 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <link rel="stylesheet" href="output.css
-  ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="output.css">
   <title>Matías Fernández | Product preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-
-  Preview
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
+<body class="w-[375px] md:w-[1440px] bg-cream flex flex-col justify-center items-center min-h-screen">
+  <main class="md:flex md:flex-row md:w-[580px] m-auto p-2 ">
+    <img class="hidden md:block md:bg-desktop rounded-t-xl md:rounded-tr-none md:rounded-l-xl md:w-6/12 md:bg-cover md:bg-no-repeat" alt="">
+    <img src="images/image-product-mobile.jpg" class="md:hidden rounded-t-xl" alt="">
+    
+    <section class="bg-white p-7 rounded-b-xl md:rounded-bl-none md:rounded-r-xl md:w-6/12">
+      <h2 class="text-dark-grayish-blue uppercase tracking-[5px] text-sm">Perfume</h2>
+        
+      <h1 class="font-Fraunces text-4xl md:text-3xl/[30px] my-3 text-very-dark-blue">Gabrielle Essence Eau De Parfum</h1>
+    
+      <p class="text-xs/[20px] md:text- text-dark-grayish-blue w-11/12">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+      
+      <div class="flex flex-row items-center mt-6 md:gap-6">
+        <span class="text-dark-cyan font-Fraunces text-4xl md:text-3xl w-6/12">$149.99</span>
+        <p class="w-6/12 text-dark-grayish-blue line-through">$169.99</p>
+      </div>
+    
+      <button class="bg-dark-cyan hover:bg-emerald-800 text-white py-3 mt-4 w-full md:text-sm rounded-lg flex flex-row justify-center items-center gap-2"><img src="images/icon-cart.svg" alt=""> Add to Cart</button>
+    </section>
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
 </body>
 </html>
